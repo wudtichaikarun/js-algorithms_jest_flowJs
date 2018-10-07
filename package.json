@@ -4,9 +4,17 @@
   "description": "- String Reversal - Palindromes - Interger Reversal - MaxChars - The Classic FizzBuzz - Array Chunking - Anagrams - Sentence Capitalization - Printing Stps - Two Sided Steps - Pyramids - Find The Vowels - Enter the Matrix Spiral - Runtime Complexity - Runtime Complexity in Practice - Fibonacci - The Queue - Underwater Queue Weaving - Stack 'Em Up With Stacks - Two Become One - Linked Lists - Find the Midpoint - Circular Lists - Step Back From the Tail - Buillding a Tree - Tree Width with Level Width - Binary Search Trees - Validating a Binary Search Tree - Back to Javascript Event - Sorting With BubbleSort - Sort By Selection - Ack, MergeSort",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src/ -d lib/",
+    "prepublish": "yarn run build",
+    "flow:watch": "flow-watch"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.82.0",
+    "flow-watch": "^1.1.3"
+  }
 }
