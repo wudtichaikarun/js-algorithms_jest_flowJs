@@ -1,3 +1,5 @@
+// @flow
+
 /**
  * Directions
  * given a string, return a new string with the reversed
@@ -8,7 +10,7 @@
  */
 
 // solution#1
-function reverse(str) {
+function reverse(str: string) {
   // normal version
   // const arr = str.split('');
   // arr.reverse();
@@ -22,7 +24,7 @@ function reverse(str) {
 }
 
 // solution#2
-function reverse2(str) {
+function reverse2(str: string) {
   let reversed = '';
   /**
    * note avoid syntax like this
@@ -36,7 +38,7 @@ function reverse2(str) {
 }
 
 // solution#3
-function reverse3(str) {
+function reverse3(str: string) {
   // normal version
   // return str.split('').reduce((reversed, character) => {
   //   return character + reversed;

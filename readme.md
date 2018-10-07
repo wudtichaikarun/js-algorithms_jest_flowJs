@@ -31,12 +31,23 @@
 - Sort By Selection
 - Ack, MergeSort
 
+**jest**
+
 ```javascript
 // install jest to global
 npm install jest -g
 
 // run test
-jest folder-name/test.js --watch
+jest src/folder-name/test.js --watch
+```
+
+**flowJs**
+
+```javascript
+// npm
+npm run flow:watch
+// yarn
+yarn run flow:watch
 ```
 
 ## String Reversal
