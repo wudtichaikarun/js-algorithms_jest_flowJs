@@ -31,7 +31,7 @@
 - Sort By Selection
 - Ack, MergeSort
 
-```
+```javascript
 // install jest to global
 npm install jest -g
 
@@ -41,7 +41,7 @@ jest folder-name/test.js --watch
 
 ## String Reversal
 
-```
+```javascript
 // solution #1
 function reverse(str) {
   // normal version
