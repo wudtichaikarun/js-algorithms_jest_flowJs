@@ -44,12 +44,40 @@ jest folder-name/test.js --watch
 ```
 // solution #1
 function reverse(str) {
-  const arr = str.split('');
-  arr.reverse();
-  return arr.join('');
+  // normal version
+  // const arr = str.split('');
+  // arr.reverse();
+  // return arr.join('');
+
+  // short version
+  return str
+    .split('')
+    .reverse()
+    .join('');
 }
-// solution #1 in short
-function reverse(str) {
-  return str.split('').reverse().join('');
+
+// solution#2
+function reverse2(str) {
+  let reversed = '';
+  /**
+   * note avoid syntax like this
+   * for(var i=0; i<str.length; i++) {}
+   */
+  for (let character of str) {
+    reversed = character + reversed;
+  }
+
+  return reversed;
+}
+
+// solution#3
+function reverse3(str) {
+  // normal version
+  // return str.split('').reduce((reversed, character) => {
+  //   return character + reversed;
+  // }, '');
+
+  // short version
+  return str.split('').reduce((rev, char) => char + rev, '');
 }
 ```

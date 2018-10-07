@@ -9,6 +9,12 @@
 
 // solution#1
 function reverse(str) {
+  // normal version
+  // const arr = str.split('');
+  // arr.reverse();
+  // return arr.join('');
+
+  // short version
   return str
     .split('')
     .reverse()
