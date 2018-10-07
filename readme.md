@@ -31,6 +31,16 @@
 - Sort By Selection
 - Ack, MergeSort
 
+**start project**
+
+```javascript
+// npm
+npm install
+
+// yarn
+yarn install
+```
+
 **jest**
 
 ```javascript
@@ -46,6 +56,7 @@ jest src/folder-name/test.js --watch
 ```javascript
 // npm
 npm run flow:watch
+
 // yarn
 yarn run flow:watch
 ```
